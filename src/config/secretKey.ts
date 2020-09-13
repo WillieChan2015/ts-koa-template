@@ -1,0 +1,1 @@
+export const key = 'fgrew' + '543tr' + 'RF43tg';

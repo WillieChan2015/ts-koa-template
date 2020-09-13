@@ -1,0 +1,39 @@
+{
+  "name": "ts-koa-template",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "author": {
+    "name": "Willie"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "serverd": "npm run dev",
+    "server:watch": "cross-env NODE_ENV=production nodemon --exec ts-node src/server.ts",
+    "server": "cross-env NODE_ENV=production ts-node src/server.ts"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cross-env": "^7.0.2",
+    "crypto": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.3.0",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/koa": "^2.11.4",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/mysql": "^2.15.15",
+    "@types/node": "^14.6.3",
+    "nodemon": "^2.0.4"
+  }
+}
