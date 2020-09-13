@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
     "build": "tsc",
+    "start": "cross-env NODE_ENV=production node -r ts-node/register/transpile-only -r tsconfig-paths/register app/server.js",
     "serverd": "npm run dev",
     "server:watch": "cross-env NODE_ENV=production nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
     "server": "cross-env NODE_ENV=production ts-node -r tsconfig-paths/register src/server.ts"
