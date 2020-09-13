@@ -1,5 +1,5 @@
 import koa, { ParameterizedContext } from 'koa';
-import Util from '../../util/util';
+import Util from '@util/util';
 
 export default {
   /**

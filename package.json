@@ -6,11 +6,11 @@
     "name": "Willie"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon --exec ts-node src/server.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
     "build": "tsc",
     "serverd": "npm run dev",
-    "server:watch": "cross-env NODE_ENV=production nodemon --exec ts-node src/server.ts",
-    "server": "cross-env NODE_ENV=production ts-node src/server.ts"
+    "server:watch": "cross-env NODE_ENV=production nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
+    "server": "cross-env NODE_ENV=production ts-node -r tsconfig-paths/register src/server.ts"
   },
   "dependencies": {
     "axios": "^0.20.0",
@@ -34,6 +34,7 @@
     "@types/koa-static": "^4.0.1",
     "@types/mysql": "^2.15.15",
     "@types/node": "^14.6.3",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "tsconfig-paths": "^3.9.0"
   }
 }
